@@ -10,6 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.0.3"
-  }
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipowskijm/REST_Rant_Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/filipowskijm/REST_Rant_Project/issues"
+  },
+  "homepage": "https://github.com/filipowskijm/REST_Rant_Project#readme"
 }
