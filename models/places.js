@@ -1,4 +1,4 @@
-module.exports = [{
+ places = [{
     name: 'H-Thai-ML',
     city: 'Seattle',
     state: 'WA',
@@ -11,3 +11,5 @@ module.exports = [{
     cuisines: 'Coffee, Bakery',
     pic: 'http://placekitten.com/250/250'
   }]
+
+  module.exports = places
