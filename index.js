@@ -8,8 +8,6 @@ mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true, 
     useUnifiedTopology: true
   })
-
-module.exports.Place = require('./models/places')
   
 app.set('views', __dirname + '/views')
 app.set('view engine', 'jsx')
