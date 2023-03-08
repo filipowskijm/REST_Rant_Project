@@ -3,7 +3,6 @@ const Def = require('../default')
 
 function index (data) {
     let placesFormatted = data.places.map((place) => {
-      console.log(place)
       return (
         <div key={place.name}>
           <h2>

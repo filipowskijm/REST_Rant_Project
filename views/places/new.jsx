@@ -13,7 +13,7 @@ function new_form () {
             </div>
              <div className='form-group'>
                 <label htmlFor="pic" className='form-control' >Place Picture</label>
-                <input id="pic" name="pic" />
+                <input id="pic" name="pic" default="https://placekitten.com/400/400" />
             </div>
             <div className='form-group'>
                 <label htmlFor="city" className='form-control' >City</label>
@@ -29,7 +29,7 @@ function new_form () {
             </div>
             <div className="form-group">
                 <label htmlFor="founded" className='form-control' >Founded Year</label>
-                <input id="founded" name="founded" />
+                <input type="number" id="founded" name="founded" value={new Date().getFullYear()}/>
             </div>
             <input className='btn btn-primary' type="submit" value="Add Place" />
             </form>
