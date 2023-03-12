@@ -26,7 +26,7 @@ function show ({place}) {
           {stars} stars
         </h3>
       )
-      comments = place.comments.map(c => {
+    comments = place.comments.map(c => {
       return (
         <div className="border">
           <h2 className="rant">{c.rant ? 'Rant! 😡' : 'Rave! 😻'}</h2>
@@ -35,6 +35,9 @@ function show ({place}) {
             <stong>- {c.author}</stong>
           </h3>
           <h4>Rating: {c.stars}</h4>
+          <form method="POST" action={`/places/${place.id}/comment/${c.id}?_method=DELETE`}>
+            <input type="submit" className="btn btn-danger" value="Delete Comment" />
+          </form>
         </div>
       )
     })
