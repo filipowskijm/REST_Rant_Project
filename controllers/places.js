@@ -44,7 +44,8 @@ router.delete('/:id/comment/:id', (req, res) => {
   console.log(req.body)
   db.Comment.findByIdAndDelete(req.params.id)
   .then(place => {
-    res.redirect(`/places/${req.params.id}`)
+    res.redirect(`/places`)
+    console.log('comment deleted')
   })
   .catch(err => {
       console.log(err)
